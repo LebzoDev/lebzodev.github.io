@@ -1,120 +1,210 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href="style.css" />
-        <title>
-            Ndeweneul
-        </title>
-    </head>
-    <body>
-     
-        <img class="blob_flow" src="image/blob2.svg">
-        <section class="main">
-            <section class="blob_contour">
-                <img id="blob_first" src="image/blob_13-6-70(1).svg">
-                <img id="blob_second" src="image/blob_13-6-70(1).svg">
-            </section>
-            <section onclick="BottomFunction()" class="contact_space">
-                <span id="contact">
-                    Contact
-                </span>
-                <img src="image/expand_more_white_24dp.svg">
-            </section>
-            <section class="second">
-                <section class="image">
-                    <img class="image_profil" src="image/image.jpeg">
-                </section>
-                <hr class="hr_line">
-               <section class="text_title">
-                    <span class="span_primary">
-                        Alioune Badara Diop
-                     </span> 
-                     <span class="span_second">
-                        Juriste in Senegal
-                     </span>
-                     <section class="social_network_area_section">
-                        <img onclick="goFacebook()" class="social_network" src="image/icons8-facebook.svg"> 
-                        <img onclick="goLinkedin()" class="social_network" src="image/icons8-linkedin.svg">
-                        <img onclick="goTwitter()" class="social_network" src="image/icons8-twitter.svg">               
-                    </section>
-                
-               </section>
-               <section class="main_text">
-                <span class="title">
-                    <img class="width_blob_40" src="image/blob2.svg">
-                    Travail et Formation
-                </span>
-                <p>
-                Alioune Badara est juriste d'entreprise dans une compagnie financière ayant son siège sociale à Dakar et présente à Abidjan (Cote d'Ivoire), Bamako (Mali) et Conakry (République de Guinée). Il y occupe la fonction de responsable de la gouvernance.
-                </p>
-                <p>
-                Il est diplômé de la faculté de droit de l’Université Gaston Berger (Saint-Louis, Sénégal) d’un master en droit Économique et des affaires.
-                </p>
-                <p>
-                Alioune Badara fut capitaine de l'équipe qui représentait son Université lors de la 3ème édition du Concours Voix des Jeunes. Leur équipe remporta le concours aux niveaux national (Voix des Jeunes Sénégal) et régional (Voix des Jeunes Afrique). Il reçût le prix du Meilleur colibri (attribué au meilleur participant du concours).
-                </p>
-                <p>
-                Alioune Badara est le premier Sénégalais admis à l’Ecole Nationale d’Administration d'Egypte (National Training Academy) pour représenter le Sénégal au prestigieux African Presidential Leadership Program. Ce programme sponsorisé par le président 2019 l'Union Africaine fut est destiné aux jeunes leaders les plus remarquables du continent africain.
-            </p>
-                <span class="title">
-                    <img class="img_title" src="image/blob2.svg">
-                    Communauté
-                </span>
-                <p >
-                En termes de services à la communauté et vie associative, depuis 2014 Alioune Badara est membre du premier réseau mondial de jeunes citoyens actifs travaillant pour le changement positif des communautés, la Jeune Chambre Internationale (+200.000 membres). Affilié à l'organisation locale de Saint-Louis dont il fut membre fondateur, il y a occupé la plus haute fonction administrative de président local en 2018. Il continua sa carrière au niveau du Comité Directeur National de la JCI Sénégal en occupant les fonctions Conseiller Juridique Général. En 2020, il intègre le Comité Exécutif National pour servir en tant que Secrétaire Général National et reçut le prix du Meilleur Collaborateur du mandat 2020. Alioune Badara fut élu Vice-Président National pour le mandat 2021 en charge de la supervision de 122 membres répartis en de 03 organisations locales. (JCI Dakar Numéro 1, JCI Rufisque Renaissance et JCI Universitaire CESAG)
-                </p>
-                Sous le pseudonyme @albadaradi, il a une présence très active sur les réseaux sociaux avec: Environ 22,400 followers sur Twitter,
-                Environ 15,100 relations sur LinkedIn
-            </p>
-            <span class="title">
-                <img class="width_blob_40" src="image/blob2.svg">
-                Education
-            </span>
-            <p>
-                <img class="width_blob_10" src="image/blob2.svg">
-                Universite Gaston Berger, Sénégal
-                <br>
-                <img class="width_blob_10" src="image/blob2.svg">
-               National Training Academy, Egypt
-            </p>
-            </section>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de développeur full-stack" />
+  <title>Mon Portfolio – Développeur Full-Stack</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
 
-            <section id="contact">
-                <span class="contact_title">
-                    Contact
-                </span>
-                <hr class="rupture_rh">
-                <hr class="rupture_rh">
-                <section id="form_message">
-                    <form method="POST">
-                        <section style="display: flex;align-items: center;flex-direction:column;">
-                            <section class="width_field">
-                                <label for="email"> Nom</label><br>
-                                <input id="nom" type="text" name="nom">
-                            </section>
-                            <section class="width_field">
-                                <label for="email"> Email</label><br>
-                                <input type="text" id="email" name="email">
-                            </section>
-                            <br>
-                            <section class="width_field">  
-                                <label for="email"> Message</label><br>
-                                <textarea  id="message" name="message">ENter your text</textarea>
-                            </section>
-                            <hr>
-                            <button type="submit" id="submit_button">
-                                Envoyer
-                                <img class="send_icon" src="image/icons8-envoi-de-courriel-96.png">
-                            </button>
-                        </section>
-                    </form>
-                </section>
-               
-            </section>
-            </section>
-        </section>
-    </body>
-    <script src="script.js"></script>
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">Portfolio<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Bonjour, je suis</p>
+      <h1 class="hero-name">Votre <span class="accent">Nom</span></h1>
+      <p class="hero-title">Développeur Full-Stack &amp; Passionné du Web</p>
+      <p class="hero-desc">
+        Je crée des expériences web modernes, performantes et accessibles.
+        Laravel · Vue.js · Node.js · GitHub Pages.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact"  class="btn btn-outline">Me contacter</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-dots">
+          <span style="background:#ff5f56"></span>
+          <span style="background:#ffbd2e"></span>
+          <span style="background:#27c93f"></span>
+        </div>
+        <pre><code><span class="kw">const</span> dev = {
+  name: <span class="str">"Votre Nom"</span>,
+  stack: [<span class="str">"Laravel"</span>, <span class="str">"Vue.js"</span>],
+  passion: <span class="str">"Open Source"</span>,
+  deploy: <span class="str">"GitHub Pages"</span> <span class="cm">// 🚀</span>
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title">À <span class="accent">Propos</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Développeur full-stack avec <strong>6+ ans d'expérience</strong>,
+            je suis passionné par la création d'applications web robustes et élégantes.
+          </p>
+          <p>
+            Actuellement en Master SRIV, j'allie académique et projets
+            freelance pour rester au cœur de l'innovation tech.
+          </p>
+          <div class="skills">
+            <span class="skill-tag">Laravel</span>
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">Nuxt</span>
+            <span class="skill-tag">Angular</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">GitHub Actions</span>
+          </div>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-num">6+</span>
+            <span class="stat-label">Ans d'expérience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">30+</span>
+            <span class="stat-label">Projets livrés</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Clients satisfaits</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Café bu ☕</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Mes <span class="accent">Projets</span></h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-header" style="background: linear-gradient(135deg,#667eea,#764ba2)">
+            <span class="project-icon">🏫</span>
+          </div>
+          <div class="project-body">
+            <h3>School Manager</h3>
+            <p>Système de gestion scolaire complet avec emplois du temps, inscriptions et paiements.</p>
+            <div class="project-tags">
+              <span>Laravel</span><span>Vue.js</span><span>Inertia</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-btn">Demo</a>
+              <a href="#" class="link-btn link-ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header" style="background: linear-gradient(135deg,#f093fb,#f5576c)">
+            <span class="project-icon">🗺️</span>
+          </div>
+          <div class="project-body">
+            <h3>Geoloc Tombe</h3>
+            <p>Application de géolocalisation de cimetière avec Angular, JWT et gestion des rôles.</p>
+            <div class="project-tags">
+              <span>Angular</span><span>Laravel API</span><span>JWT</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-btn">Demo</a>
+              <a href="#" class="link-btn link-ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header" style="background: linear-gradient(135deg,#4facfe,#00f2fe)">
+            <span class="project-icon">🌐</span>
+          </div>
+          <div class="project-body">
+            <h3>Network Supervisor</h3>
+            <p>Système de supervision réseau distribué en Python avec TCP, MySQL et ThreadPool.</p>
+            <div class="project-tags">
+              <span>Python</span><span>TCP</span><span>MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-btn">Demo</a>
+              <a href="#" class="link-btn link-ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Me <span class="accent">Contacter</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>Disponible pour des missions freelance et des collaborations. N'hésitez pas à me contacter !</p>
+          <div class="contact-links">
+            <a href="mailto:votre@email.com" class="contact-item">
+              <span>📧</span> votre@email.com
+            </a>
+            <a href="https://github.com/votre-username" class="contact-item" target="_blank">
+              <span>🐙</span> github.com/votre-username
+            </a>
+            <a href="https://linkedin.com/in/votre-profil" class="contact-item" target="_blank">
+              <span>💼</span> LinkedIn
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleForm(event)">
+          <div class="form-group">
+            <input type="text"  placeholder="Votre nom"    required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Votre email"  required />
+          </div>
+          <div class="form-group">
+            <textarea rows="4"  placeholder="Votre message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%">Envoyer ✉️</button>
+          <p class="form-success" id="formSuccess">Message envoyé ! Merci 🎉</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Fait avec ❤️ et déployé sur <a href="https://pages.github.com" target="_blank">GitHub Pages</a></p>
+    <p class="footer-sub">© 2025 Votre Nom · Tous droits réservés</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
